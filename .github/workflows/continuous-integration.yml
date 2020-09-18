@@ -34,6 +34,5 @@ jobs:
           script: |
             rm -rf squiz
             git clone https://github.com/petelah/squiz.git
-            python3.8 -m venv /home/github-actions/squizvenv
-            source /home/github-actions/squiz/venv activate
-            /home/github-actions/venv/bin/pip install -r requirements.txt
+            python3.8 -m venv /home/github-actions/squiz/venv
+            /home/github-actions/venv/bin/pip3.8 install -r /home/github-actions/squiz/requirements.txt
